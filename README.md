@@ -1,5 +1,5 @@
 # TypeRacerBot  
-A bot that simulates typing skills (just for fun or educational purposes)  
+A bot that simulates typing skills for https://play.typeracer.com/ (just for fun or educational purposes)  
 the Botlogic.py contains the automation logic     
 the TypeRacerBot.py contains a console application to initate and  control the speed of the bot   
 **Note:**   
