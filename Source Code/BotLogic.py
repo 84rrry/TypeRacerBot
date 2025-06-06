@@ -50,7 +50,7 @@ def TypeRacerbot(speed):
     soup = BeautifulSoup(html,features="html.parser")
     text = soup.get_text()
     text=findtext(text)
-    timer=driver.find_element(By.XPATH,'/html/body/div[4]/div/table/tbody/tr/td/table/tbody/tr/td[3]/div/span').text[1:]
+    timer=driver.find_element(By.XPATH, "//div[contains(@class, 'countdownPopup')]//div[@class='timeDisplay']/span[@class='time']").text[1:]
     print('Secondes to go:',timer)
     time.sleep(int(timer)+1) 
     fasterThanYou(speed,text,driver)     
