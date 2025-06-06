@@ -22,7 +22,7 @@ while True:
     print("\033[93m  -enter 2 to type like you have two hands \033[00m".center(width+10))
     print("\033[93m  -enter 3 to type like a touchtyping world champ \033[00m".center(width+10))
     print("\033[93m  -enter 4 and they'll eat your dust \033[00m".center(width+10))
-    print("\033[93m  -enter 5 fuck it i'm a hacker \033[00m".center(width+10))
+    print("\033[93m  -enter 5 fu*k it i'm a hacker \033[00m".center(width+10))
     Choice=input()
     
     if Choice=='0':
