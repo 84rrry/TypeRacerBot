@@ -6,8 +6,8 @@ A bot that automates typing on [play.typeracer.com](https://play.typeracer.com/)
 
 * **Automated Typing**: Automatically types the text in a TypeRacer race.
 * **Adjustable Speed**: Choose from a range of typing speeds, from a leisurely pace to superhuman speeds.
+* **Multi-Browser Support**: Works with Google Chrome, Mozilla Firefox, and Microsoft Edge.
 * **User-Friendly Interface**: A simple and colorful command-line interface to control the bot.
-* **Fun Speed Tiers**: Amusing speed descriptions to add a bit of fun to the experience.
 
 ## ⚙️ How It Works
 
@@ -19,7 +19,7 @@ The bot is built with Python and utilizes the following libraries:
 
 The main logic is split into two files:
 * `BotLogic.py`: This file contains the core functions for browser automation, text extraction, and the typing simulation.
-* `TypeRacerBot.py`: This file provides a console application that allows the user to select a typing speed and initiate the bot.
+* `TypeRacerBot.py`: This file provides a console application that allows the user to select a browser and typing speed to initiate the bot.
 
 ## 🏁 Getting Started
 
@@ -30,8 +30,11 @@ To get the bot up and running on your local machine, follow these simple steps.
 Make sure you have the following installed on your system:
 
 * **Python 3.x**
-* **Microsoft Edge** browser
-* **Microsoft Edge WebDriver**: The WebDriver must match your version of Microsoft Edge. You can download it from the [official Microsoft Edge WebDriver page](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/).
+* At least one of the following web browsers:
+    * Google Chrome
+    * Mozilla Firefox
+    * Microsoft Edge
+* The corresponding WebDriver for your browser may be required if Selenium cannot manage it automatically.
 
 ### Installation
 
@@ -54,21 +57,14 @@ Make sure you have the following installed on your system:
     python "Source Code/TypeRacerBot.py"
     ```
 
-2.  **Choose a speed:**
-    You will be prompted to choose a typing speed from the menu. Enter a number from 0 to 5 to select your desired speed.
+2.  **Choose your browser:**
+    You will first be prompted to select your browser.
 
-    ```
-    Choose the desired Speed:
-      -enter 0 to type like my grandma
-      -enter 1 to type using two fingers just like your sister
-      -enter 2 to type like you have two hands
-      -enter 3 to type like a touchtyping world champ
-      -enter 4 and they'll eat your dust
-      -enter 5 fuck it i'm a hacker
-    ```
+3.  **Choose a speed:**
+    Next, you will be prompted to choose a typing speed from the menu.
 
-3.  **Let the bot do the work:**
-    Once you've made your choice, the bot will open Microsoft Edge, navigate to TypeRacer, and start typing for you!
+4.  **Let the bot do the work:**
+    Once you've made your choices, the bot will open your selected browser, navigate to TypeRacer, and start typing for you!
 
 ## 📂 File Descriptions
 
@@ -80,5 +76,4 @@ Make sure you have the following installed on your system:
 ## 📝 Disclaimer
 
 * This bot is intended for educational purposes and personal entertainment only.
-* The bot uses the Microsoft Edge web driver, so please ensure that both Microsoft Edge and its corresponding WebDriver are installed on your system.
-* For a ready-to-use version without manual setup, you can download the `.exe` file from the `EXE` folder (if available).
+* The bot has been tested on Google Chrome, Mozilla Firefox, and Microsoft Edge. Ensure you have at least one of these browsers installed.
